@@ -1,8 +1,29 @@
 $(function () {
+    var _firstP = 0,
+        _moveVal = 0;
     $(".touchM").on("mousedown",function(e){
         e.preventDefault();
         var event = e.getOriginalEvent;
-        console.log(e.touches[0].clientX);
+        _firstP =e.touches[0].clientX;
+        console.log(_firstP);
+    });
+    /*$(".touchM").on("mousemove",function(e){
+        e.preventDefault();
+        var event = e.getOriginalEvent;
+        console.log(_moveVal);
+    });*/
+    $(".touchM").on("mouseup",function(e){
+        e.preventDefault();
+        var event = e.touches[0].getOriginalEvent;
+        _moveVal = _firstP - e.clientX;
+        console.log(_moveVal);
+        if(_moveVal==_firstP){
+
+        }else if(_moveVal > 0){
+            alert("이전");
+        }else if(_moveVal < 0){
+            alert("다음");
+        }
     });
 });
 /*
