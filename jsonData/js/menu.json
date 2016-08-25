@@ -9,10 +9,22 @@
     {
       "usrName":"임꺽정",
       "usrJob":"의적",
-      "usrNickName":"백정도 고기 먹을 줄 안다",
+      "usrNickName":"백정도고기먹을줄안다",
       "usrEmail":""
     }
+  ],
+  "menu02" : [
+    {
+      "usrName":"장길산",
+      "usrJob":"의적",
+      "usrNickName":"인삼팔아요",
+      "usrEmail":"jang@Hwanghae.com"
+    },
+    {
+      "usrName":"이자겸",
+      "usrJob":"왕의장인",
+      "usrNickName":"영광굴비가진리",
+      "usrEmail":"gulbi@glory.com"
+    }
   ]
-
-
 }
