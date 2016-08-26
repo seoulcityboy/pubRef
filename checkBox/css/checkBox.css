@@ -1,5 +1,7 @@
 .jsChk { position: relative; }
 .jsChk:before { content: ""; position: absolute; top: 0px; left: 0px; display: inline-block; width: 10px; height: 10px; background: #f1f1f1; border: 1px solid #ccc; }
-.jsChk.active:after { content: ""; position: absolute; top: 1px; left: 1px; display: inline-block; width: 10px; height: 10px; background: #F00; }
+.jsChk.active:after { content: ""; position: absolute; top: 1px; left: 1px; display: inline-block; width: 10px; height: 10px; background: #F00; z-index: 2; }
+.jsChk.active.disabled:after { content: ""; position: absolute; top: 1px; left: 1px; display: inline-block; width: 10px; height: 10px; background: #333; z-index: 3; }
+.jsChk.disabled:after { content: ""; position: absolute; top: 1px; left: 1px; display: inline-block; width: 10px; height: 10px; background: #999; z-index: 3; }
 
 /*# sourceMappingURL=checkBox.css.map */
