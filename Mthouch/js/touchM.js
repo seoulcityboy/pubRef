@@ -20,9 +20,9 @@ $(function () {
         if(_moveVal==_firstP){
 
         }else if(_moveVal > 0){
-            alert("이전");
+            console.log("이전");
         }else if(_moveVal < 0){
-            alert("다음");
+            console.log("다음");
         }
     });
 });
