@@ -15,5 +15,6 @@ $(function () {
         }
     } else {
         currentOS = "nomobile";
+        console.log("PC");
     }
 })
