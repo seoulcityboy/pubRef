@@ -4,8 +4,11 @@ $(function () {
         console.log(topVal);
         if(topVal>160){
             $(".wing").addClass("on");
+            $(".topBtn").addClass("on");
+
         }else{
             $(".wing").removeClass("on");
+            $(".topBtn").removeClass("on");
         }
     });
 });
