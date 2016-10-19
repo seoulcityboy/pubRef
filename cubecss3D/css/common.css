@@ -1,0 +1,21 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+div, p, ul, ol, dl, li, dt, dd, span, a, img {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+img {
+  border: none; }
+
+/*# sourceMappingURL=common.css.map */
