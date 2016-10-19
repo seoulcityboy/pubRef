@@ -3,14 +3,18 @@
 html,body{height:auto;}
 body{padding-top:300px; perspective:500px;}
 $val:300px;
-#wrap{position:relative; width:$val; height:$val; margin:100px auto; transform-origin: 100% 50%; transform-style:preserve-3d; transition:all 1s; transform:translateZ(#{$val/2});
-	div{width:$val; height:$val; opacity:0.5; position:absolute; top:0; left: 0;
-		&:nth-child(1){background:#F10000; transform: rotateY(0deg) translateZ(#{$val/2});}
-		&:nth-child(2){background:#0000F1; transform: rotateY(90deg) translateZ(#{$val/2});}
-		&:nth-child(3){background:#00F100; transform: rotateY(180deg) translateZ(#{$val/2});}
-		&:nth-child(4){background:#F100F1; transform: rotateY(270deg) translateZ(#{$val/2});}
-		&:nth-child(5){background:#F1F100; transform: rotateX(-90deg) translateZ(#{$val/2});}
-		&:nth-child(6){background:#00F1F1; transform: rotateX(-270deg) translateZ(#{$val/2});}
+#wrap{position:relative; width:200px; height:100px; margin:100px auto; transform-origin: 100% 50%; transform-style:preserve-3d; transition:all 1s; transform:translateZ(50px);
+	animation-name: animateWorld;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	div{opacity:0.5; position:absolute; top:0; left: 0;
+		&:nth-child(1){width:200px; height:100px;background:#F10000; transform: rotateY(0deg) translateZ(100px)}
+		&:nth-child(2){width:200px; height:100px;background:#0000F1; transform: rotateY(90deg) translateZ(100px);}
+		&:nth-child(3){width:200px; height:100px;background:#00F100; transform: rotateY(180deg) translateZ(100px);}
+		&:nth-child(4){width:200px; height:100px;background:#F100F1; transform: rotateY(270deg) translateZ(100px);}
+		&:nth-child(5){width:200px; height:200px; background:#F1F100; transform: rotateX(-90deg) translateZ(0px);}
+		&:nth-child(6){width:200px; height:200px; background:#00F1F1; transform: rotateX(-270deg) translateZ(0px);}
 	}
 }
 #ball{position:relative; width:$val; height:$val; margin:200px auto; transform-style: preserve-3d;
