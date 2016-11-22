@@ -12,6 +12,7 @@
 		position absolute
 		top 14px
 		left 50px
+		width (@width/2)
 		animation ani linear 4s infinite
 .panel
 	li
@@ -50,3 +51,8 @@ border-radius()
 	vendor("box-radius", arguments)
 .box
 	border-radius 1px
+.foo
+	&__bar
+		width: 10px
+		^[0]:hover &
+			width: 20px

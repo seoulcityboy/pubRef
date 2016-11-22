@@ -40,6 +40,7 @@ table {
   position: absolute;
   top: 14px;
   left: 50px;
+  width: 50%;
   animation: ani linear 4s infinite;
 }
 .panel li {
@@ -74,6 +75,12 @@ table {
 }
 .box {
   box-radius: 1px;
+}
+.foo__bar {
+  width: 10px;
+}
+.foo:hover .foo__bar {
+  width: 20px;
 }
 @-moz-keyframes ani {
   0% {
