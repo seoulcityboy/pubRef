@@ -32,6 +32,9 @@ function tMove(e) {
 }
 function tEnd(e) {
 	if(move == false)return;
-	e.preventDefault();
+	if(move_point > dWidth/2 ){
+		e.preventDefault();
+		$thisBox.css("left",move_point);
+	}
 	console.log("Fin");
 }
